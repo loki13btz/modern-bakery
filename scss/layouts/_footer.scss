@@ -1,0 +1,104 @@
+.footer {
+  position: relative;
+  background-image: url('../images/footer-background.png');
+  background-color: var(--primary-dark-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+  }
+  &::before {
+    background-image: url('../../images/mobile-ver-bread-left.png');
+    width: 92px;
+    height: 196px;
+    left: 0;
+    top: 48px;
+  }
+  &::after {
+    background-image: url('../../images/mobile-ver-bread-right.png');
+    width: 110px;
+    height: 120px;
+    right: -8px;
+    bottom: -29px;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    &::before {
+      background-image: url('../../images/decor-bread-small.png');
+      width: 180px;
+      height: 120px;
+    }
+    &::after {
+      background-image: url('../../images/decor-bread-large.png');
+      width: 380px;
+      height: 190px;
+      right: 0;
+    }
+  }
+
+  &__address-list {
+    padding-bottom: 16px;
+  }
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+    z-index: 1;
+  }
+  &__adress-link {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-light-color);
+    text-decoration: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+  }
+  &__adress-link:hover {
+    color: var(--brand-normal-color);
+  }
+  &__adress-copyright {
+    font-size: 14px;
+    color: #a18268;
+  }
+  &__adress-icon {
+    fill: var(--primary-light-color);
+  }
+  &__adress-icon:hover {
+    fill: var(--brand-normal-color);
+  }
+}

@@ -1,0 +1,7 @@
+.link {
+  color: var(--primary-light-color);
+  transition: color 0.3s;
+}
+.link:hover {
+  color: var(--brand-normal-color);
+}
