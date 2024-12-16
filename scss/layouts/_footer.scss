@@ -42,14 +42,14 @@
     content: '';
   }
   &::before {
-    background-image: url('../../images/mobile-ver-bread-left.png');
+    background-image: url('../images/mobile-ver-bread-left.png');
     width: 92px;
     height: 196px;
     left: 0;
     top: 48px;
   }
   &::after {
-    background-image: url('../../images/mobile-ver-bread-right.png');
+    background-image: url('../images/mobile-ver-bread-right.png');
     width: 110px;
     height: 120px;
     right: -8px;
@@ -58,12 +58,12 @@
 
   @media screen and (min-width: $bp-tablet) {
     &::before {
-      background-image: url('../../images/decor-bread-small.png');
+      background-image: url('../images/decor-bread-small.png');
       width: 180px;
       height: 120px;
     }
     &::after {
-      background-image: url('../../images/decor-bread-large.png');
+      background-image: url('../images/decor-bread-large.png');
       width: 380px;
       height: 190px;
       right: 0;
