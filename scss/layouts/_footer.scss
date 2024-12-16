@@ -37,7 +37,6 @@
   &::before,
   &::after {
     position: absolute;
-    bottom: 0;
     background-repeat: no-repeat;
     content: '';
   }
@@ -52,8 +51,9 @@
     background-image: url('../images/mobile-ver-bread-right.png');
     width: 110px;
     height: 120px;
-    right: -8px;
+    right: -7px;
     bottom: -29px;
+    overflow: hidden;
   }
 
   @media screen and (min-width: $bp-tablet) {
@@ -61,12 +61,15 @@
       background-image: url('../images/decor-bread-small.png');
       width: 180px;
       height: 120px;
+      left: 0;
+      top: 100px;
     }
     &::after {
       background-image: url('../images/decor-bread-large.png');
       width: 380px;
       height: 190px;
       right: 0;
+      bottom: 0;
     }
   }
 
